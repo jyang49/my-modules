@@ -6,7 +6,7 @@
 
 module "pubsub_wrapper" {
   for_each = toset(var.topic_list)
-  source   = "git::https://github.com/terraform-google-modules/terraform-google-pubsub?ref=v3.0.0"
+  source   = "git::https://github.com/terraform-google-modules/terraform-google-pubsub?ref=v3.2.0"
 
   project_id = var.project_id
 
